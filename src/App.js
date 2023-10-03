@@ -11,15 +11,26 @@ function App() {
   const [mode,setMode] = useState('light')
   const [alert,setAlert] = useState(null)
 
-  const toggleMode =()=>{
-    if(mode === 'light'){
+  // const removeBg = ()=>{
+  //   document.body.classList.remove('bg-light');
+  //   document.body.classList.remove('bg-dark');
+  //   document.body.classList.remove('bg-primary');
+  //   document.body.classList.remove('bg-warning');
+  //   document.body.classList.remove('bg-success');
+  //   document.body.classList.remove('bg-danger');
+  // }
+
+  const toggleMode =(cls)=>{
+    // removeBg();
+    // document.body.classList.add('bg-'+cls)
+    if(mode==='light'){
       setMode('dark');
-      document.body.style.backgroundColor = '#29354a';
+      document.body.style.backgroundColor='#29354a';
       showAlert("Dark Mode has been enabled","success")
     }
     else{
       setMode('light');
-      document.body.style.backgroundColor = 'white';
+      document.body.style.backgroundColor='white';
       showAlert("Light Mode has been enabled","success")
     }
   }
