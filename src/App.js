@@ -25,7 +25,7 @@ function App() {
     // document.body.classList.add('bg-'+cls)
     if(mode==='light'){
       setMode('dark');
-      document.body.style.backgroundColor='#29354a';
+      document.body.style.backgroundColor='#411e52';
       showAlert("Dark Mode has been enabled","success")
     }
     else{
